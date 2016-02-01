@@ -43,6 +43,6 @@ Spring Framework.
 
 ##Creator
 
-Nicholas Ivanecky ([@ivantr0n](http://twitter.com/ivantr0n)), To visit all my works visit ([www.ivantron.com](www.ivantron.com))
+Nicholas Ivanecky ([@ivantr0n](http://twitter.com/ivantr0n)), To visit all my works visit ([www.ivantron.com](http://www.ivantron.com))
 
 
