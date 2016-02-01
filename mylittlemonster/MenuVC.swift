@@ -6,8 +6,19 @@
 //  Copyright © 2016 Nicholas Ivanecky. All rights reserved.
 //
 
-import Cocoa
+import UIKit
 
 class MenuVC: UIViewController {
+    
+    @IBOutlet weak var monsterImg: SpringImageView!
+    @IBOutlet weak var titleLabel: SpringLabel!
+    @IBOutlet weak var instructionsButton: SpringButton!
+    @IBOutlet weak var playGameButton: SpringButton!
+    @IBOutlet weak var creatorName: SpringLabel!
+    
+    override func viewDidLoad() {
+        
+    }
+    
 
 }

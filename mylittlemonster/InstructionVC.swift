@@ -6,7 +6,7 @@
 //  Copyright © 2016 Nicholas Ivanecky. All rights reserved.
 //
 
-import Cocoa
+import UIKit
 
 class InstructionVC: UIViewController {
 

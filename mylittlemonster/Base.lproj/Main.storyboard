@@ -1,13 +1,29 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Tiki Tropic.ttf">
+            <string>TikiTropic</string>
+            <string>TikiTropic</string>
+            <string>TikiTropic</string>
+            <string>TikiTropic</string>
+            <string>TikiTropic</string>
+            <string>TikiTropic</string>
+            <string>TikiTropic</string>
+            <string>TikiTropic</string>
+            <string>TikiTropic</string>
+            <string>TikiTropic</string>
+            <string>TikiTropic</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="mylittlemonster" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +31,539 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="eCL-mY-pab">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ground" translatesAutoresizingMaskIntoConstraints="NO" id="K3c-VF-hbI">
+                                <rect key="frame" x="0.0" y="540" width="600" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="NTR-DY-fwk"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="livespanel" translatesAutoresizingMaskIntoConstraints="NO" id="hDR-Vo-mCt">
+                                <rect key="frame" x="177" y="28" width="247" height="73"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="247" id="6Ui-pX-apT"/>
+                                    <constraint firstAttribute="height" constant="73" id="8Td-vX-5WD"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="RB7-oO-Tct">
+                                <rect key="frame" x="203" y="40" width="189" height="53"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="skull" translatesAutoresizingMaskIntoConstraints="NO" id="ciw-1o-AYa">
+                                        <rect key="frame" x="0.0" y="0.0" width="53" height="53"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="53" id="Uo5-0u-qMG"/>
+                                            <constraint firstAttribute="height" constant="53" id="hLd-v8-qP1"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="skull" translatesAutoresizingMaskIntoConstraints="NO" id="YiB-54-ugr">
+                                        <rect key="frame" x="68" y="0.0" width="53" height="53"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="53" id="Cpf-7h-JcW"/>
+                                            <constraint firstAttribute="height" constant="53" id="Osm-PP-UdZ"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="skull" translatesAutoresizingMaskIntoConstraints="NO" id="pce-a8-8LZ">
+                                        <rect key="frame" x="136" y="0.0" width="53" height="53"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="53" id="9Ys-wP-rFg"/>
+                                            <constraint firstAttribute="height" constant="53" id="sUh-xP-kV5"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillEqually" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="ddN-ge-NVF">
+                                <rect key="frame" x="152" y="138" width="290" height="98"/>
+                                <subviews>
+                                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heart" translatesAutoresizingMaskIntoConstraints="NO" id="RSF-qb-YD0" customClass="DragImage" customModule="mylittlemonster" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="95" height="98"/>
+                                    </imageView>
+                                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="food" translatesAutoresizingMaskIntoConstraints="NO" id="NdS-jj-ZME" customClass="DragImage" customModule="mylittlemonster" customModuleProvider="target">
+                                        <rect key="frame" x="195" y="0.0" width="95" height="98"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="idle1" translatesAutoresizingMaskIntoConstraints="NO" id="PTs-6G-41A" customClass="MonsterImg" customModule="mylittlemonster" customModuleProvider="target">
+                                <rect key="frame" x="-20" y="178" width="515" height="402"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="515" id="HyK-wH-rsE"/>
+                                    <constraint firstAttribute="height" constant="402" id="Jr5-tl-CE7"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tfz-xV-N6A" customClass="SpringButton" customModule="mylittlemonster" customModuleProvider="target">
+                                <rect key="frame" x="415" y="547" width="175" height="45"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="175" id="2DC-2m-8ug"/>
+                                    <constraint firstAttribute="height" constant="45" id="P1t-Wc-Iis"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TikiTropic" family="Tiki Tropic" pointSize="34"/>
+                                <state key="normal" title="RESTART">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autohide" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="fadeIn"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="resetGameButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZVb-f2-2qP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Sy-Ht-DQT" customClass="SpringButton" customModule="mylittlemonster" customModuleProvider="target">
+                                <rect key="frame" x="27" y="543" width="115" height="54"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="B1k-Cv-SyE"/>
+                                    <constraint firstAttribute="width" constant="115" id="EJ5-La-pUY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TikiTropic" family="Tiki Tropic" pointSize="34"/>
+                                <state key="normal" title="MENU">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autohide" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="fadeIn"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="menuButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NUi-FA-9L2"/>
+                                    <action selector="resetGameButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vj7-Af-Ibj"/>
+                                    <segue destination="r3g-4r-x3A" kind="show" id="0zb-bx-4qD"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="eCL-mY-pab" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="2JT-Mm-fsW"/>
+                            <constraint firstItem="hDR-Vo-mCt" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="CHh-Wp-Bbh"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="PTs-6G-41A" secondAttribute="bottom" constant="43" id="EZo-hG-0MF"/>
+                            <constraint firstItem="PTs-6G-41A" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="-20" id="FkI-3a-fbF"/>
+                            <constraint firstItem="RB7-oO-Tct" firstAttribute="centerY" secondItem="hDR-Vo-mCt" secondAttribute="centerY" id="Lgv-bv-o2D"/>
+                            <constraint firstItem="eCL-mY-pab" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="NiF-t3-4vE"/>
+                            <constraint firstItem="1Sy-Ht-DQT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="27" id="OTe-XY-rYs"/>
+                            <constraint firstAttribute="trailing" secondItem="eCL-mY-pab" secondAttribute="trailing" id="OUR-WJ-utx"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="PTs-6G-41A" secondAttribute="bottom" constant="20" id="XFp-NG-qMy"/>
+                            <constraint firstAttribute="trailing" secondItem="K3c-VF-hbI" secondAttribute="trailing" id="XXy-B5-EEF"/>
+                            <constraint firstItem="ddN-ge-NVF" firstAttribute="top" secondItem="hDR-Vo-mCt" secondAttribute="bottom" constant="37" id="aUQ-o3-rSD"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="K3c-VF-hbI" secondAttribute="bottom" id="ckL-6n-ebC"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="1Sy-Ht-DQT" secondAttribute="bottom" constant="3" id="d8h-se-fqi"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Tfz-xV-N6A" secondAttribute="bottom" constant="8" id="iCG-30-gSf"/>
+                            <constraint firstAttribute="trailing" secondItem="Tfz-xV-N6A" secondAttribute="trailing" constant="10" id="ie6-UX-mgz"/>
+                            <constraint firstItem="ddN-ge-NVF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="inn-gi-mtW"/>
+                            <constraint firstItem="hDR-Vo-mCt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qWt-sI-Rp5"/>
+                            <constraint firstItem="RB7-oO-Tct" firstAttribute="centerX" secondItem="hDR-Vo-mCt" secondAttribute="centerX" id="qpR-iQ-NgI"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="eCL-mY-pab" secondAttribute="bottom" id="thq-m1-qVg"/>
+                            <constraint firstItem="K3c-VF-hbI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="uVx-jE-lgS"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="foodImg" destination="NdS-jj-ZME" id="sPR-en-037"/>
+                        <outlet property="heartImg" destination="RSF-qb-YD0" id="lT5-e3-f3Q"/>
+                        <outlet property="monsterImg" destination="PTs-6G-41A" id="Jf9-XL-J8n"/>
+                        <outlet property="penalty1Image" destination="ciw-1o-AYa" id="lxn-Tr-t2F"/>
+                        <outlet property="penalty2Image" destination="YiB-54-ugr" id="iE8-aS-Oer"/>
+                        <outlet property="penalty3Image" destination="pce-a8-8LZ" id="4yE-5M-jVH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="875" y="707"/>
+        </scene>
+        <!--MenuVC-->
+        <scene sceneID="xBm-8z-xFf">
+            <objects>
+                <viewController storyboardIdentifier="menu" id="r3g-4r-x3A" customClass="MenuVC" customModule="mylittlemonster" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="j5L-UY-Q5B"/>
+                        <viewControllerLayoutGuide type="bottom" id="577-SW-w4s"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="s1d-K1-oKC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="63z-hq-nRj">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="THE MONSTER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="45" translatesAutoresizingMaskIntoConstraints="NO" id="L1F-u2-uPW" customClass="SpringLabel" customModule="mylittlemonster" customModuleProvider="target">
+                                <rect key="frame" x="140" y="45" width="389" height="96"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="389" id="x8G-zx-ZHa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TikiTropic" family="Tiki Tropic" pointSize="48"/>
+                                <color key="textColor" red="0.21176470589999999" green="0.56862745100000001" blue="0.82352941180000006" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="slideDown"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                        <real key="value" value="1.2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autohide" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="velocity">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="damping">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JgK-nC-iF5" customClass="SpringButton" customModule="mylittlemonster" customModuleProvider="target">
+                                <rect key="frame" x="157" y="491" width="287" height="69"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="69" id="WPG-PH-d85"/>
+                                    <constraint firstAttribute="width" constant="287" id="jpR-x2-ree"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TikiTropic" family="Tiki Tropic" pointSize="30"/>
+                                <state key="normal" title="INSTRUCTIONS">
+                                    <color key="titleColor" red="0.21176470589999999" green="0.56862745100000001" blue="0.82352941180000006" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="slideUp"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autohide" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                        <real key="value" value="1.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="damping">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                        <real key="value" value="0.69999999999999996"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="S9f-vA-gLc" kind="show" id="ekn-gW-EgH"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="creature" translatesAutoresizingMaskIntoConstraints="NO" id="Dal-AB-32O" customClass="SpringImageView" customModule="mylittlemonster" customModuleProvider="target">
+                                <rect key="frame" x="140" y="149" width="314" height="269"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="269" id="0pn-lk-jZ7"/>
+                                    <constraint firstAttribute="width" constant="314" id="DD0-w8-G2a"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="slideDown"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                        <real key="value" value="1.2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autohide" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="velocity">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="damping">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IOo-dT-F40" customClass="SpringButton" customModule="mylittlemonster" customModuleProvider="target">
+                                <rect key="frame" x="147" y="414" width="307" height="69"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="307" id="egU-G2-BNw"/>
+                                    <constraint firstAttribute="height" constant="69" id="xba-0E-vAw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TikiTropic" family="Tiki Tropic" pointSize="60"/>
+                                <state key="normal" title="PLAY GAME"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="slideUp"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autohide" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                        <real key="value" value="1.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="damping">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                        <real key="value" value="0.69999999999999996"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="SAH-GN-Gcf"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Created By Nicholas Ivanecky " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MJv-S2-fe4" customClass="SpringLabel" customModule="mylittlemonster" customModuleProvider="target">
+                                <rect key="frame" x="202" y="563" width="190" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="190" id="78b-yk-cVu"/>
+                                    <constraint firstAttribute="height" constant="29" id="NXB-jP-wyd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TikiTropic" family="Tiki Tropic" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="slideUp"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autohide" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="velocity">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="damping">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                        <real key="value" value="0.69999999999999996"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="63z-hq-nRj" firstAttribute="top" secondItem="s1d-K1-oKC" secondAttribute="top" id="4TC-Q4-ew0"/>
+                            <constraint firstItem="63z-hq-nRj" firstAttribute="leading" secondItem="s1d-K1-oKC" secondAttribute="leading" id="DkU-oS-9VP"/>
+                            <constraint firstItem="Dal-AB-32O" firstAttribute="top" secondItem="L1F-u2-uPW" secondAttribute="bottom" constant="8" id="GhR-I0-PJu"/>
+                            <constraint firstItem="Dal-AB-32O" firstAttribute="centerX" secondItem="s1d-K1-oKC" secondAttribute="centerX" id="GvZ-Gy-gu4"/>
+                            <constraint firstItem="MJv-S2-fe4" firstAttribute="centerX" secondItem="s1d-K1-oKC" secondAttribute="centerX" id="L6D-hw-ynf"/>
+                            <constraint firstItem="577-SW-w4s" firstAttribute="top" secondItem="MJv-S2-fe4" secondAttribute="bottom" constant="8" id="L6M-Ho-OvP"/>
+                            <constraint firstItem="L1F-u2-uPW" firstAttribute="top" secondItem="j5L-UY-Q5B" secondAttribute="bottom" constant="25" id="Po3-k7-G6q"/>
+                            <constraint firstItem="L1F-u2-uPW" firstAttribute="centerX" secondItem="s1d-K1-oKC" secondAttribute="centerX" id="Pr8-lz-tel"/>
+                            <constraint firstItem="JgK-nC-iF5" firstAttribute="top" secondItem="IOo-dT-F40" secondAttribute="bottom" id="Sqq-7l-F8d"/>
+                            <constraint firstItem="IOo-dT-F40" firstAttribute="centerX" secondItem="s1d-K1-oKC" secondAttribute="centerX" id="ZK4-al-zgz"/>
+                            <constraint firstItem="577-SW-w4s" firstAttribute="top" secondItem="63z-hq-nRj" secondAttribute="bottom" id="hwK-jU-L6t"/>
+                            <constraint firstItem="JgK-nC-iF5" firstAttribute="centerX" secondItem="s1d-K1-oKC" secondAttribute="centerX" id="jv7-FZ-Xfc"/>
+                            <constraint firstAttribute="trailing" secondItem="63z-hq-nRj" secondAttribute="trailing" id="qeY-Bp-x05"/>
+                            <constraint firstItem="IOo-dT-F40" firstAttribute="top" secondItem="L1F-u2-uPW" secondAttribute="bottom" constant="280" id="xpF-zC-NJk"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="creatorName" destination="MJv-S2-fe4" id="qCR-JX-P7y"/>
+                        <outlet property="instructionsButton" destination="JgK-nC-iF5" id="Bb6-zS-evr"/>
+                        <outlet property="monsterImg" destination="Dal-AB-32O" id="d6j-qs-Lr2"/>
+                        <outlet property="playGameButton" destination="IOo-dT-F40" id="7En-tL-HiK"/>
+                        <outlet property="titleLabel" destination="L1F-u2-uPW" id="bMh-AG-oVX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JQE-gg-7GN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="146" y="-91"/>
+        </scene>
+        <!--InstructionVC-->
+        <scene sceneID="eVo-zU-j5y">
+            <objects>
+                <viewController id="S9f-vA-gLc" customClass="InstructionVC" customModule="mylittlemonster" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="llt-U3-ZaC"/>
+                        <viewControllerLayoutGuide type="bottom" id="GRt-FN-ptU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="U9L-8e-05E">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="mZZ-U0-y4C">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Instructions" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L67-EZ-u7h" customClass="SpringLabel" customModule="mylittlemonster" customModuleProvider="target">
+                                <rect key="frame" x="20" y="20" width="294" height="96"/>
+                                <fontDescription key="fontDescription" name="TikiTropic" family="Tiki Tropic" pointSize="54"/>
+                                <color key="textColor" red="0.21176470589999999" green="0.56862745100000001" blue="0.82352941180000006" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autohide" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="squeezeRight"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                        <real key="value" value="1.2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="food" translatesAutoresizingMaskIntoConstraints="NO" id="ZL8-91-TzQ" customClass="SpringImageView" customModule="mylittlemonster" customModuleProvider="target">
+                                <rect key="frame" x="118" y="102" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="XvO-Y5-TNA"/>
+                                    <constraint firstAttribute="width" constant="70" id="haY-A3-aXG"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autohide" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="squeezeLeft"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                        <real key="value" value="1.2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y1j-aA-GRP" customClass="SpringButton" customModule="mylittlemonster" customModuleProvider="target">
+                                <rect key="frame" x="41" y="488" width="292" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="9Hb-tl-rPU"/>
+                                    <constraint firstAttribute="width" constant="292" id="P4q-hp-SJT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TikiTropic" family="Tiki Tropic" pointSize="64"/>
+                                <state key="normal" title="Play Game">
+                                    <color key="titleColor" red="0.21176470589999999" green="0.56862745100000001" blue="0.82352941180000006" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autohide" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="slideUp"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="dhw-Ss-JuV"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="heart" translatesAutoresizingMaskIntoConstraints="NO" id="hSs-sQ-mlI" customClass="SpringImageView" customModule="mylittlemonster" customModuleProvider="target">
+                                <rect key="frame" x="111" y="218" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="Tzb-ho-Qur"/>
+                                    <constraint firstAttribute="height" constant="70" id="qqQ-bp-3eL"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autohide" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="squeezeRight"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                        <real key="value" value="1.2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="skull" translatesAutoresizingMaskIntoConstraints="NO" id="7Ot-cW-Oxm" customClass="SpringImageView" customModule="mylittlemonster" customModuleProvider="target">
+                                <rect key="frame" x="111" y="340" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="ev8-fd-7gZ"/>
+                                    <constraint firstAttribute="height" constant="70" id="ntA-8k-LGo"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autohide" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="squeezeLeft"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                        <real key="value" value="1.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                        <real key="value" value="1.2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Only get 3 Lives" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oeA-2k-bZp" customClass="SpringLabel" customModule="mylittlemonster" customModuleProvider="target">
+                                <rect key="frame" x="34" y="409" width="241" height="54"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="OlK-hQ-Rvi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TikiTropic" family="Tiki Tropic" pointSize="35"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autohide" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="squeezeLeft"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                        <real key="value" value="1.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                        <real key="value" value="1.2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Drag the Heart" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rIy-gm-XtD" customClass="SpringLabel" customModule="mylittlemonster" customModuleProvider="target">
+                                <rect key="frame" x="41" y="278" width="273" height="54"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="273" id="LCO-kG-GE5"/>
+                                    <constraint firstAttribute="height" constant="54" id="XcW-nh-aoH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TikiTropic" family="Tiki Tropic" pointSize="35"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autohide" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="squeezeRight"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                        <real key="value" value="1.2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Drag the Food" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mbe-WM-Iib" customClass="SpringLabel" customModule="mylittlemonster" customModuleProvider="target">
+                                <rect key="frame" x="41" y="163" width="273" height="54"/>
+                                <fontDescription key="fontDescription" name="TikiTropic" family="Tiki Tropic" pointSize="35"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autohide" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="squeezeLeft"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                        <real key="value" value="1.2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rIy-gm-XtD" firstAttribute="top" secondItem="mbe-WM-Iib" secondAttribute="bottom" constant="61" id="5Uc-Mu-cYG"/>
+                            <constraint firstItem="GRt-FN-ptU" firstAttribute="top" secondItem="mZZ-U0-y4C" secondAttribute="bottom" id="6PC-d0-UMP"/>
+                            <constraint firstItem="oeA-2k-bZp" firstAttribute="top" secondItem="rIy-gm-XtD" secondAttribute="bottom" constant="77" id="6fk-88-vTp"/>
+                            <constraint firstItem="mbe-WM-Iib" firstAttribute="centerX" secondItem="U9L-8e-05E" secondAttribute="centerX" id="9t2-pt-mO3"/>
+                            <constraint firstItem="mZZ-U0-y4C" firstAttribute="top" secondItem="U9L-8e-05E" secondAttribute="top" id="Fxw-SO-MCD"/>
+                            <constraint firstItem="hSs-sQ-mlI" firstAttribute="top" secondItem="mbe-WM-Iib" secondAttribute="bottom" constant="1" id="Hcd-Jp-K2c"/>
+                            <constraint firstItem="oeA-2k-bZp" firstAttribute="centerX" secondItem="U9L-8e-05E" secondAttribute="centerX" id="MrD-P8-UEY"/>
+                            <constraint firstItem="mZZ-U0-y4C" firstAttribute="leading" secondItem="U9L-8e-05E" secondAttribute="leading" id="NBl-Or-XC7"/>
+                            <constraint firstItem="rIy-gm-XtD" firstAttribute="centerX" secondItem="U9L-8e-05E" secondAttribute="centerX" id="SiS-PR-tx5"/>
+                            <constraint firstAttribute="trailing" secondItem="mZZ-U0-y4C" secondAttribute="trailing" id="cR6-yz-0ud"/>
+                            <constraint firstItem="7Ot-cW-Oxm" firstAttribute="top" secondItem="rIy-gm-XtD" secondAttribute="bottom" constant="8" id="cnq-nn-MAQ"/>
+                            <constraint firstItem="7Ot-cW-Oxm" firstAttribute="centerX" secondItem="U9L-8e-05E" secondAttribute="centerX" id="e4F-xS-bzJ"/>
+                            <constraint firstItem="y1j-aA-GRP" firstAttribute="centerX" secondItem="U9L-8e-05E" secondAttribute="centerX" id="eJg-yO-4yY"/>
+                            <constraint firstItem="ZL8-91-TzQ" firstAttribute="top" secondItem="llt-U3-ZaC" secondAttribute="bottom" constant="82" id="h9T-O1-23h"/>
+                            <constraint firstItem="GRt-FN-ptU" firstAttribute="top" secondItem="y1j-aA-GRP" secondAttribute="bottom" constant="20" id="k3L-PG-Qlx"/>
+                            <constraint firstItem="ZL8-91-TzQ" firstAttribute="centerX" secondItem="U9L-8e-05E" secondAttribute="centerX" id="pcV-fQ-y1I"/>
+                            <constraint firstItem="mbe-WM-Iib" firstAttribute="top" secondItem="ZL8-91-TzQ" secondAttribute="bottom" constant="-9" id="rkR-QU-1P1"/>
+                            <constraint firstItem="L67-EZ-u7h" firstAttribute="top" secondItem="llt-U3-ZaC" secondAttribute="bottom" id="rsg-3n-Qyv"/>
+                            <constraint firstItem="L67-EZ-u7h" firstAttribute="centerX" secondItem="U9L-8e-05E" secondAttribute="centerX" id="tR9-Jx-ALq"/>
+                            <constraint firstItem="hSs-sQ-mlI" firstAttribute="centerX" secondItem="U9L-8e-05E" secondAttribute="centerX" id="uh2-fq-Dm0"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3m9-zl-ssX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="121" y="769"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bg" width="768" height="1024"/>
+        <image name="creature" width="360" height="242"/>
+        <image name="food" width="95" height="98"/>
+        <image name="ground" width="1444" height="151"/>
+        <image name="heart" width="95" height="98"/>
+        <image name="idle1" width="889" height="615"/>
+        <image name="livespanel" width="468" height="137"/>
+        <image name="skull" width="95" height="98"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="dhw-Ss-JuV"/>
+    </inferredMetricsTieBreakers>
 </document>
