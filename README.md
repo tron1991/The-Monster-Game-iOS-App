@@ -1,7 +1,7 @@
 #The Monster App for iOS
 
 ##Intro & Goal
-The goal is to showcase my product skills for “The Monster App”. The game’s premise is simple: either feed or give heart to the monster to keep him alive. The secondary goal is to execute the task quickly by designing, developing, and launching in the App Store within a week
+The goal is to showcase “The Monster App” as my application for Pocket Gems APM position. The game’s premise is simple: either feed or give heart to the monster to keep him alive. The secondary goal is to execute the task quickly by designing, developing, and launching in the App Store within a week
 
 ## Preview
 ![screencast](http://g.recordit.co/kFM9lqwUdA.gif)
